@@ -1,7 +1,6 @@
 .container {
     width: 640px;
-    margin: auto;
-    margin-top: 150px;
+    margin: 5% auto;
     background: white;
     color: #262626;
      display: flex;
@@ -41,7 +40,9 @@
     color: white;
     font-size: 25px;
     font-weight: 500;
-    border-radius: 8px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
     cursor: pointer;
 }
 
@@ -57,4 +58,26 @@
 .container .wrong {
     background: #ffebeb;
     border-color: ff4a4a;
+}
+
+@media screen and (max-width: 600px) {
+    .container {
+        margin: 30% auto;
+        width: 250px;
+    }
+
+    .container h2 {
+        font-size: 15px;
+    }
+
+    .container ul li {
+        height: 40px;
+        font-size: 15px;
+    }
+
+    .container button {
+        width: 150px;
+        height: 40px;
+        font-size: 15px;
+    }
 }
